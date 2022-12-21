@@ -1,0 +1,10 @@
+.list-container {
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+
+}
+
+.list-item {
+    margin: 1rem 0;
+}

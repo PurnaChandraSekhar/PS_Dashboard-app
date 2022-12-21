@@ -1,0 +1,12 @@
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.listItem {
+    text-decoration: none;
+    padding: 1.5rem;
+    color: #202121;
+    font-size: 1.6rem;
+}
