@@ -7,7 +7,6 @@ const Button = ({btnLabel}) => {
   const { setIsEditable, isEditable } = useContext(DashBoardContext)
 
   const changeMode = () => {
-    console.log("clicked", isEditable)
     setIsEditable(!isEditable)
   }
 

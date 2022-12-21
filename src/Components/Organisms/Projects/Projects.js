@@ -35,9 +35,9 @@ const Projects = () => {
     >
       {(formik) => (
           <Form className="form-container">
-            <FormInput type="text" label="project name" id="project name" name="project name" />
+            <FormInput type="text" label="project name" id="projectName" name="projectName" />
             <FormInput type="text" id="description" label="description" name="description" />
-            <FormInput type="text" label="team size" id="team size" name="team size" />
+            <FormInput type="text" label="team size" id="teamSize" name="teamSize" />
             <button type="submit" className="btn">Submit</button>
           </Form>
       )}
