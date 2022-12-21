@@ -13,5 +13,17 @@
     flex-direction: column;
     gap: .5rem;
     align-items: center;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    width: 60%;
+
+}
+
+.text-input {
+    width: 100%;
+    padding: 1rem 2.5rem;
+}
+
+.my-label {
+    align-self: flex-start;
+    font-size: 1.6rem;
 }

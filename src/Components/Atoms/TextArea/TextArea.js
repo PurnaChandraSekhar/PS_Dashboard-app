@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { DashBoardContext } from '../../../Context/DashboardContext'
 
+import '../../Molecules/Card/Card.css'
+
 const TextArea = ({data}) => {
     const { id, heading } = data
     const { dashboardData, setDashboardData } = useContext(DashBoardContext)
@@ -11,7 +13,7 @@ const TextArea = ({data}) => {
     }
 
   return (
-     <input type="text" value={heading} onChange={(e) => handleChange(e.target.value)} />
+     <input type="text" className="card-input" value={heading} onChange={(e) => handleChange(e.target.value)} />
   )
 }
 

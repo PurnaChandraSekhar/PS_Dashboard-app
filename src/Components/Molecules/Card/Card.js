@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { DashBoardContext } from "../../../Context/DashboardContext";
 import { TextArea } from "../../Atoms";
+
 import "./Card.css";
 
 const Card = () => {
@@ -10,8 +11,8 @@ const Card = () => {
       {dashboardData != null &&
         dashboardData.map((item) => (
           <div className="card" key={item.id}>
-            {isEditable ? <TextArea data={item} /> : <h3>{item.heading}</h3>}
-            <hr />
+            {isEditable ? <TextArea data={item} /> : <h3 className="card-heading">{item.heading}</h3>}
+            <hr className="card-hr" />
             <main>{item.value}</main>
           </div>
         ))}

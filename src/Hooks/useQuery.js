@@ -1,4 +1,3 @@
-import React from "react";
 import { useQuery } from "react-query";
 
 const useQueryHook = () => {
@@ -10,6 +9,7 @@ const useQueryHook = () => {
   };
 
   const { isLoading, data } = useQuery("getUsersList", getUsers);
+  
   return {
     isLoading,
     data

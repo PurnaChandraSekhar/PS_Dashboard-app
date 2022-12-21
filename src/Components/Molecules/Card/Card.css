@@ -1,12 +1,36 @@
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    justify-items: center;
     gap: 2rem;
     width: 100%;
 }
 
 .card {
-    width: 50%;
-    max-height: 10rem;
-    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    width: 100%;
+    align-items: center;
+    min-height: 20rem;
+    max-height: 30rem;
+    box-shadow: rgb(206 206 206) 0px 0px 5px;
+    border-radius: 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-hr {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.card-input {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem 0;
+    width: 60%; 
+    font-size: 1.4rem;
+}
+
+.card-heading {
+  padding: 1rem 0;
 }

@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import { FormInput } from "../../Atoms";
 
 import './Projects.css'
+import '../../Atoms/Button/Button.css'
 
 const Projects = () => {
   const validate = Yup.object().shape({
@@ -33,14 +34,12 @@ const Projects = () => {
       onSubmit={(values) => console.log(values)}
     >
       {(formik) => (
-        <section >
           <Form className="form-container">
             <FormInput type="text" label="project name" id="project name" name="project name" />
             <FormInput type="text" id="description" label="description" name="description" />
             <FormInput type="text" label="team size" id="team size" name="team size" />
-            <button type="submit">Submit</button>
+            <button type="submit" className="btn">Submit</button>
           </Form>
-        </section>
       )}
     </Formik>
   );
